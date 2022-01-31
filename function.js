@@ -90,3 +90,27 @@ const recursiveFibbonacci = function (n) {
 };
 
 console.log(recursiveFibbonacci(1));
+
+const add10 = (x) => {
+  return x + 10;
+};
+
+console.log(add10(1));
+
+let arr = [1, 2, 3, 4, 5];
+
+arr.forEach(function (x) {
+  console.log(x * x * x);
+  console.log(x * 2);
+});
+
+arr.forEach((x) => {
+  console.log(x * x * x);
+  console.log(x * 2);
+});
+
+const addBetter = (x, y) => {
+  return x + y;
+};
+
+console.log(addBetter(1, 2));
