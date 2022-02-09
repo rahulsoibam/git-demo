@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="text">Hello</div>
+    <div class="text">Hello</div>
+    <div class="text">Hello</div>
+    <div class="text">Hello</div>
+    <div class="text">Hello</div>
+    <div class="text">Hello</div>
+    <script>
+        text = document.querySelectorAll('div');
+        const nodelistToArray = Array.apply(null, text);
+        // nodelistToArray.map(function (item) {
+        //     item.addEventListener('click', function () {
+        //         item.style.color = 'red';
+        //     });
+        // });
+        for (let i = 0; i < text.length; i++) {
+            text[i].addEventListener('click', function () {
+                text[i].style.color = 'red';
+            });
+        }
+    </script>
+</body>
+
+</html>
